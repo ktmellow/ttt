@@ -22,6 +22,7 @@ For this assignment, you will be combining your knowledge of data types, functio
 
 1. Make sure that you have a server running! The tests will not work unless the application is working. Either use your alias to start a server or type in the terminal (in the root of this application) `python -m SimpleHTTPServer 8080`.
 2. Make sure you do remove ANY of the existing HTML. Keep the IDs as they are necessary for the tests to pass.
+3. Make sure that when any of the divs with an ID of `cell` are clicked, you add `innerText` of `X` or `O` (even if you decide to use images).
 
 ## Bonus
 * Only allow a user to have 5 seconds to go, otherwise they lose their turn!
