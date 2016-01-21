@@ -15,17 +15,6 @@ describe("TTT tests", function(){
       yield nightmare.end();
     });
 
-  describe("Starting the game", () =>{
-    it("It should start with X", function*(){
-      var start = yield nightmare
-        .goto('http://localhost:8080')
-        .evaluate(function () {
-          return document.getElementsByClassName('playerTurn')[0].innerText;
-        });
-      expect(start).to.equal('It is X\'s turn');
-    });
-  });
-
   describe("Changing the player", () => {
     it("It should toggle between X and O", function*(){
       var move = yield nightmare
