@@ -21,7 +21,7 @@ For this assignment, you will be combining your knowledge of data types, functio
 - Your goal with this assignment should be to get the tests to pass. Once you have the tests passing, feel free to create a new branch and add whatever styling/changes you would like. 
 
 1. Make sure that you have a server running! The tests will not work unless the application is working. Either use your alias to start a server or type in the terminal (in the root of this application) `python -m SimpleHTTPServer 8080`.
-2. Make sure you do remove ANY of the existing HTML. Keep the IDs as they are necessary for the tests to pass.
+2. Make sure you do not remove ANY of the existing HTML. Keep the IDs as they are necessary for the tests to pass.
 3. Make sure that when any of the divs with an ID of `cell` are clicked, you add `innerText` of `X` or `O` (even if you decide to use images).
 
 ## Bonus
