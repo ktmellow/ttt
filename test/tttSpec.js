@@ -31,7 +31,6 @@ describe("TTT tests", function(){
         .goto('http://localhost:8080')
         .click('#cell0')
         .click('#cell0')
-        .click('#cell0')
         .evaluate(function () {
           return document.getElementById("cell0").innerText;
         });
@@ -64,7 +63,6 @@ describe("TTT tests", function(){
         .click('#cell5')
         .click('#cell7')
         .click('#cell8')
-        .click('#cell9')
         .evaluate(function(){
           return document.getElementsByClassName("playerTurn")[0].innerText;
         });
