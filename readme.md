@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-For this assignment, you will be combining your knowledge of data types, functions, DOM manupulation and HTML/CSS to build Tic Tac Toe! If you are not familiar with the rules you can read about them [here](https://en.wikipedia.org/wiki/Tic-tac-toe)
+For this assignment, you will be combining your knowledge of data types, functions, DOM manipulation and HTML/CSS to build Tic Tac Toe! If you are not familiar with the rules you can read about them [here](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
 ## Getting Started
 
