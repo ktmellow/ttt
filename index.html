@@ -3,25 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <!-- my css -->
+  <link rel="stylesheet" type="text/css" href="stylin.css">
+  
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h2 class="playerTurn"></h2>
+<div class="container">
+  <h2 class="playerTurn">Player turn: </h2>
   <div>
-    <div>
-        <div id="cell0"></div>
-        <div id="cell1"></div>
-        <div id="cell2"></div>
+    <div class="row1">
+        <div id="cell0">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell1">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell2">&nbsp;</div>
     </div>
-      <div>
-        <div id="cell3"></div>
-        <div id="cell4"></div>
-        <div id="cell5"></div>
+    <div class="horizontal">&nbsp;</div>
+      <div class="row2">
+        <div id="cell3">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell4">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell5">&nbsp;</div>
       </div>
-      <div>
-        <div id="cell6"></div>
-        <div id="cell7"></div>
-        <div id="cell8"></div>
+    <div class="horizontal">&nbsp;</div>
+      <div class="row3">
+        <div id="cell6">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell7">&nbsp;</div>
+        <div class="vertical">&nbsp;</div>
+        <div id="cell8">&nbsp;</div>
       </div>
   </div>
+</div>
+<script src="tictactoe.js"></script>
 </body>
 </html>
