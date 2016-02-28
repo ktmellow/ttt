@@ -44,12 +44,12 @@ function placeMarker(e) {
     e.target.removeEventListener('click', placeMarker);
     if (count > 4 && checkWin(x)) {
       playerTurnDiv.innerText = "Game over, X wins!";
-      reset();
+      endGame();
     } else if (count > 7){
       playerTurnDiv.innerText = "Game over, it's a draw!";
-      reset();
+      endGame();
     } else {
-      playerTurnDiv.innerText = "Player Turn: O";
+      playerTurnDiv.innerText = "It is O's turn";
     }
   } else {
     e.target.innerText = "O";
@@ -58,18 +58,19 @@ function placeMarker(e) {
     e.target.removeEventListener('click', placeMarker);
     if (count > 4 && checkWin(o)) {
       playerTurnDiv.innerText = "Game over, O wins!";
-      reset();
+      endGame();
     } else if (count > 7) {
       playerTurnDiv.innerText = "Game over, it's a draw!";
-      reset();
+      endGame();
     } else {
-      playerTurnDiv.innerText = "Player Turn: X";
+      playerTurnDiv.innerText = "It is X's turn";
     }
   } 
 }
 
 // Reset the board.
 function reset() {
+  playerTurnDiv.innerText = "It is X's turn";
   count = 0;
   x = ["empty","empty","empty","empty","empty","empty","empty","empty","empty"];
   o = ["empty","empty","empty","empty","empty","empty","empty","empty","empty"];
@@ -77,4 +78,15 @@ function reset() {
     cells[cell].addEventListener('click', placeMarker);
     cells[cell].innerHTML = "&nbsp;" ;
   }
+}
+
+// Add click event listener for reset button.
+var resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', reset);
+
+// Ends the game. No more clicking allowed.
+function endGame() {
+  for (var cell=0; cell < cells.length; cell++) {
+  cells[cell].removeEventListener('click', placeMarker);
+}
 }
